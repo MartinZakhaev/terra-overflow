@@ -16,7 +16,7 @@ const Page = async () => {
           route="/community"
           iconPosition="left"
           imgSrc="/assets/icons/search.svg"
-          placeholder="Search for amazing minds"
+          placeholder="Search for amazing minds here..."
           otherClasses="flex-1"
         />
         <Filter

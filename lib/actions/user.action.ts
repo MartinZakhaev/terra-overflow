@@ -78,17 +78,6 @@ export async function deleteUser(params: DeleteUserParams) {
   }
 }
 
-// export async function getAllUser(params: GetAllUsersParams) {
-//   try {
-//     connectToDatabase();
-
-//     return newUser;
-//   } catch (error) {
-//     console.log(error);
-//     throw error;
-//   }
-// }
-
 export async function getAllUsers(params: GetAllUsersParams) {
   try {
     connectToDatabase();
@@ -100,3 +89,14 @@ export async function getAllUsers(params: GetAllUsersParams) {
     throw error;
   }
 }
+
+// export async function saveQuestion(params: Questio) {
+//   try {
+//     connectToDatabase();
+   
+//   } catch (error) {
+//     console.log(error);
+//     throw error;
+//   }
+// }
+
