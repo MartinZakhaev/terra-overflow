@@ -5,6 +5,7 @@ import ParseHTML from "@/components/shared/ParseHTML";
 import RenderTag from "@/components/shared/RenderTag";
 import Votes from "@/components/shared/Votes";
 import { getQuestionById } from "@/lib/actions/question.action";
+import { QuestionDetailParams } from "@/lib/actions/shared.types";
 import { getUserById } from "@/lib/actions/user.action";
 import { formatAndDivideNumber, getTimeStamp } from "@/lib/utils";
 import { auth } from "@clerk/nextjs";
@@ -13,7 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Page = async ({ params, searchParams }: any) => {
+const Page = async ({ params, searchParams }: QuestionDetailParams) => {
   const { userId: clerkId } = auth();
   let mongoUser;
   if (clerkId) {
@@ -49,7 +50,7 @@ const Page = async ({ params, searchParams }: any) => {
               hasUpvoted={result?.upvotes.includes(mongoUser._id)}
               downvotes={result?.downvotes.length}
               hasDownvoted={result?.downvotes.includes(mongoUser._id)}
-              // hasSaved={mongoUser?.saved.includes(result._id)}
+              hasSaved={mongoUser?.saved.includes(result._id)}
             />
           </div>
         </div>
