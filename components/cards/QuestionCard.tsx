@@ -26,7 +26,7 @@ const QuestionCard = ({
   title,
   tags,
   author,
-  upvotes,
+  upvotes,  
   views,
   answers,
   createdAt,

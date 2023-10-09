@@ -9,7 +9,6 @@ import { QuestionDetailParams } from "@/lib/actions/shared.types";
 import { getUserById } from "@/lib/actions/user.action";
 import { formatAndDivideNumber, getTimeStamp } from "@/lib/utils";
 import { auth } from "@clerk/nextjs";
-import console from "console";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -20,7 +19,6 @@ const Page = async ({ params, searchParams }: QuestionDetailParams) => {
   if (clerkId) {
     mongoUser = await getUserById({ userId: clerkId });
   }
-  console.log(mongoUser);
   const result = await getQuestionById({ questionId: params.id });
   return (
     <>
