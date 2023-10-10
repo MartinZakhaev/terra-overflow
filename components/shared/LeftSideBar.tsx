@@ -2,12 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import { sidebarLinks } from "@/constants";
-import { SignedOut } from "@clerk/nextjs";
+import { SignedOut, useAuth } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const LeftSideBar = () => {
+  const { userId } = useAuth();
   const pathname = usePathname();
   return (
     <section className="background-light900_dark200 light-border custom-scrollbar sticky left-0 top-0 flex h-screen flex-col justify-between overflow-y-auto border-r p-6 pt-36 shadow-light-300 dark:shadow-none max-sm:hidden lg:w-[266px]">
@@ -16,6 +17,13 @@ const LeftSideBar = () => {
           const isActive =
             (pathname.includes(item.route) && item.route.length > 1) ||
             pathname === item.route;
+          if (item.route === "/profile") {
+            if (userId) {
+              item.route = `${item.route}/${userId}`;
+            } else {
+              return null;
+            }
+          }
           return (
             <Link
               key={item.route}
@@ -62,16 +70,14 @@ const LeftSideBar = () => {
           </Link>
           <Link href="/sign-up">
             <Button className="small-medium light-border-2 btn-tertiary text-dark400_light900 min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none">
-            <Image
+              <Image
                 src="/assets/icons/sign-up.svg"
                 alt="sign up"
                 width={20}
                 height={20}
                 className="invert-colors lg:hidden"
               />
-              <span className="max-lg:hidden">
-                Sign Up
-              </span>
+              <span className="max-lg:hidden">Sign Up</span>
             </Button>
           </Link>
         </div>

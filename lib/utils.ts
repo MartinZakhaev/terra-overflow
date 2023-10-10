@@ -52,3 +52,12 @@ export const formatAndDivideNumber = (number: number): string => {
     return `${number}`;
   }
 };
+
+export const getJoinedDate = (date: Date): string => {
+  const options: Intl.DateTimeFormatOptions = {
+    year: 'numeric',
+    month: 'long', // You can use 'short' for abbreviated month names
+  };
+
+  return date.toLocaleString('en-US', options);
+}

@@ -3,8 +3,8 @@ import { Schema } from "mongoose";
 import { IUser } from "@/mongodb";
 
 export interface QuestionDetailParams {
-  params: {id: string};
-  searchParams: string;
+  params: { id: string };
+  searchParams: { [key: string]: string | undefined };
 }
 
 export interface CreateAnswerParams {

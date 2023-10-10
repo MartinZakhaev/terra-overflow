@@ -5,15 +5,15 @@ import ParseHTML from "@/components/shared/ParseHTML";
 import RenderTag from "@/components/shared/RenderTag";
 import Votes from "@/components/shared/Votes";
 import { getQuestionById } from "@/lib/actions/question.action";
-import { QuestionDetailParams } from "@/lib/actions/shared.types";
 import { getUserById } from "@/lib/actions/user.action";
 import { formatAndDivideNumber, getTimeStamp } from "@/lib/utils";
+import { URLProps } from "@/types";
 import { auth } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Page = async ({ params, searchParams }: QuestionDetailParams) => {
+const Page = async ({ params, searchParams }: URLProps) => {
   const { userId: clerkId } = auth();
   let mongoUser;
   if (clerkId) {

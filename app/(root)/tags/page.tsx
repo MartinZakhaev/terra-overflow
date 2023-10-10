@@ -2,12 +2,12 @@ import Filter from "@/components/shared/Filter";
 import NoResult from "@/components/shared/NoResult";
 import LocalSearchBar from "@/components/shared/search/LocalSearchBar";
 import { TagFilters } from "@/constants/filters";
-import { GetAllTags } from "@/lib/actions/tag.actions";
+import { getAllTags } from "@/lib/actions/tag.actions";
 import Link from "next/link";
 import React from "react";
 
 const Page = async () => {
-  const result = await GetAllTags({});
+  const result = await getAllTags({});
   return (
     <>
       <h1 className="h1-bold text-dark100_light900">Tags</h1>
