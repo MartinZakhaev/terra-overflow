@@ -213,7 +213,7 @@ export async function getUserAnswers(params: GetUserStatsParams) {
       author: userId,
     })
       .sort({ upvotes: -1 })
-      .populate('question', '_id title')
+      .populate("question", "_id title")
       .populate("author", "_id clerkId name picture");
     return { totalAnswers, answers: userAnswers };
   } catch (error) {
