@@ -16,7 +16,8 @@ import Interaction from "@/database/interaction.model";
 export async function getAnswers(params: GetAnswersParams) {
   try {
     connectToDatabase();
-    const { questionId, sortBy } = params;
+    const { questionId, sortBy, page = 1, pageSize = 1 } = params;
+    const skipAmount = (page - 1) * pageSize;
     let sortOptions = {};
     switch (sortBy) {
       case "highestUpvotes":
@@ -40,8 +41,14 @@ export async function getAnswers(params: GetAnswersParams) {
         model: User,
         select: "_id clerkId name picture",
       })
+      .skip(skipAmount)
+      .limit(pageSize)
       .sort(sortOptions);
-    return { answers };
+    const totalAnswers = await Answer.countDocuments({
+      question: questionId,
+    });
+    const isNext = totalAnswers > skipAmount + answers.length;
+    return { answers, isNext };
   } catch (error) {
     console.log(error);
     throw error;
