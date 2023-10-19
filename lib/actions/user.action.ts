@@ -247,7 +247,7 @@ export async function getUserQuestions(params: GetUserStatsParams) {
     })
       .skip(skipAmount)
       .limit(pageSize)
-      .sort({ views: -1, upvotes: -1 })
+      .sort({ createdAt: -1, views: -1, upvotes: -1 })
       .populate("tags", "_id name")
       .populate("author", "_id clerkId name picture");
     const isNextQuestions = totalQuestions > skipAmount + userQuestions.length;
