@@ -20,7 +20,7 @@ import { FilterQuery } from "mongoose";
 export async function getQuestions(params: GetQuestionsParams) {
   try {
     connectToDatabase();
-    const { searchQuery, filter, page = 1, pageSize = 20 } = params;
+    const { searchQuery, filter, page = 1, pageSize = 10 } = params;
     // calculate the number of posts to skip based on the page number and page size
     const skipAmount = (page - 1) * pageSize;
     const query: FilterQuery<typeof Question> = {};
@@ -163,7 +163,7 @@ export async function upvoteQuestion(params: QuestionVoteParams) {
     const { questionId, userId, hasUpvoted, hasDownvoted, path } = params;
     let updateQuery = {};
     if (hasUpvoted) {
-      updateQuery = { $pull: { upVotes: userId } };
+      updateQuery = { $pull: { upvotes: userId } };
     } else if (hasDownvoted) {
       updateQuery = {
         $pull: { downvotes: userId },
