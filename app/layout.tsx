@@ -21,7 +21,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js 13 with Clerk",
+  title: "TerraFlow",
   description:
     "TerraFlow amplifies online knowledge exchange with powerful features that make learning and sharing smarter and smoother. Ask, answer, and thrive in a dynamic community of experts.",
   icons: {

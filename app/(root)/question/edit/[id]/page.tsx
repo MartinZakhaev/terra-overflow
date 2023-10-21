@@ -3,7 +3,11 @@ import { getQuestionById } from "@/lib/actions/question.action";
 import { getUserById } from "@/lib/actions/user.action";
 import { ParamsProps } from "@/types";
 import { auth } from "@clerk/nextjs";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Edit Question | Terra Flow",
+};
 const Page = async ({ params }: ParamsProps) => {
   const { userId } = auth();
   if (!userId) return null;

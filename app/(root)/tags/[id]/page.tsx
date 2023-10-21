@@ -5,7 +5,11 @@ import LocalSearchBar from "@/components/shared/search/LocalSearchBar";
 import { IQuestion } from "@/database/question.model";
 import { getQuestionsByTagId } from "@/lib/actions/tag.actions";
 import { URLProps } from "@/types";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Tags Detail | Terra Flow",
+};
 const Page = async ({ params, searchParams }: URLProps) => {
   const result = await getQuestionsByTagId({
     tagId: params.id,

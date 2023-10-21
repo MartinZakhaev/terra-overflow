@@ -7,7 +7,11 @@ import { QuestionFilters } from "@/constants/filters";
 import { getSavedQuestion } from "@/lib/actions/user.action";
 import { SearchParamsProps } from "@/types";
 import { auth } from "@clerk/nextjs";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Collection | Terra Flow",
+};
 export default async function Home({ searchParams }: SearchParamsProps) {
   const { userId } = auth();
   if (!userId) return null;
