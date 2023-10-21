@@ -22,14 +22,14 @@
   <h3 align="center">TERRAFLOW</h3>
 
   <p align="center">
-    Stitching Together Communities
+    Nurturing the Dev Ecosystem: Terra Flow
     <br />
     <br />
-    <a href="https://threads-clone-kappa.vercel.app/sign-in">View Demo</a>
+    <a href="https://terraflow.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/MartinZakhaev/threads-clone/issues">Report Bug</a>
+    <a href="https://github.com/MartinZakhaev/terra-overflow/issues">Report Bug</a>
     ·
-    <a href="https://github.com/MartinZakhaev/threads-clone/issues">Request Feature</a>
+    <a href="https://github.com/MartinZakhaev/terra-overflow/issues">Request Feature</a>
   </p>
 </div>
 
@@ -61,7 +61,7 @@
 ![image](https://github.com/MartinZakhaev/threads-clone/assets/78039794/8378268d-3e88-4374-bb66-9814c52cbf0f)
 ![image](https://github.com/MartinZakhaev/threads-clone/assets/78039794/b46ddee6-1a68-4d66-9d6b-d3f3338eeb9e)
 
-Welcome to Terra Threads, a web-based community application designed to foster meaningful discussions and connections. Terra Threads draws inspiration from popular platforms like Thread by Meta, enabling users to create posts, and communities, engage in conversations through comments, and become part of vibrant online communities. Whether you're sharing thoughts, ideas, or passions, Terra Threads provides a space to connect with like-minded individuals.
+Terra Flow is a vibrant digital hub designed to cultivate a thriving community of developers. Our platform is a virtual gathering place where developers of all levels can seamlessly exchange their knowledge, collaborate on projects, and extend a helping hand to fellow developers facing coding conundrums. Whether you're a seasoned pro or just starting your coding journey, Terra Flow is where your programming potential flows freely, and the developer community unites to make the digital world a better place, one code snippet at a time. Join us in shaping the future of coding excellence, only at Terra Flow.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
