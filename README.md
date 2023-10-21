@@ -56,10 +56,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![image](https://github.com/MartinZakhaev/threads-clone/assets/78039794/56dc4379-0e94-4a60-9b7b-8d0cc5d833e0)
-![image](https://github.com/MartinZakhaev/threads-clone/assets/78039794/79f4431a-d3db-4c1d-a512-337ee4e39421)
-![image](https://github.com/MartinZakhaev/threads-clone/assets/78039794/8378268d-3e88-4374-bb66-9814c52cbf0f)
-![image](https://github.com/MartinZakhaev/threads-clone/assets/78039794/b46ddee6-1a68-4d66-9d6b-d3f3338eeb9e)
+![image](https://github.com/MartinZakhaev/terra-overflow/assets/78039794/b2b52366-e49c-45f4-a44d-0c04aeb9916e)
+![image](https://github.com/MartinZakhaev/terra-overflow/assets/78039794/53cd06c5-c3ce-4c9f-be73-57319e1e2814)
+![image](https://github.com/MartinZakhaev/terra-overflow/assets/78039794/55a1b4a2-0d9e-42ff-82d3-5b601441e299)
+![image](https://github.com/MartinZakhaev/terra-overflow/assets/78039794/af522be1-4e96-4aee-9f83-a8ab4b15bf14)
+![image](https://github.com/MartinZakhaev/terra-overflow/assets/78039794/b1384b08-d401-4f12-9df4-2692c5130b6b)
+![image](https://github.com/MartinZakhaev/terra-overflow/assets/78039794/53449564-46bb-4f54-8641-d4802d4dd42a)
 
 Terra Flow is a vibrant digital hub designed to cultivate a thriving community of developers. Our platform is a virtual gathering place where developers of all levels can seamlessly exchange their knowledge, collaborate on projects, and extend a helping hand to fellow developers facing coding conundrums. Whether you're a seasoned pro or just starting your coding journey, Terra Flow is where your programming potential flows freely, and the developer community unites to make the digital world a better place, one code snippet at a time. Join us in shaping the future of coding excellence, only at Terra Flow.
 
